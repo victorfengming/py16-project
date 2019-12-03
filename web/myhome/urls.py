@@ -1,5 +1,5 @@
 from django.conf.urls import url
-from . views import IndexViews
+from . views import IndexViews,LoginViews
 
 
 urlpatterns = [
@@ -10,8 +10,13 @@ urlpatterns = [
     # 详情
     url(r'^info/$', IndexViews.myhome_info, name="myhome_info"),
     # 登录
+    url(r'^login/$', LoginViews.myhome_login, name="myhome_login"),
+    url(r'^dologin/$', LoginViews.myhome_dologin, name="myhome_dologin"),
 
     # 注册
+    url(r'^register/$', LoginViews.myhome_register, name="myhome_register"),
+
+    url(r'^doregister/$', LoginViews.myhome_doregister, name="myhome_doregister"),
 
     # 购物车 ,一套: 增 删 改 查
 
@@ -21,3 +26,4 @@ urlpatterns = [
 
 
 ]
+
