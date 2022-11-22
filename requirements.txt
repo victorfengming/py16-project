@@ -12,7 +12,7 @@ lxml==4.4.1
 MarkupSafe==1.1.1
 multiprocess==0.70.9
 mysqlclient==1.4.4
-Pillow==6.2.0
+Pillow==9.3.0
 pycryptodome==3.9.0
 pycryptodomex==3.7.2
 pymongo==3.9.0
